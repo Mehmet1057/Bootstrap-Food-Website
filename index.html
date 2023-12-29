@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food-Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--navbar section-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="/images/logo.png" class="w-50" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-bolder"
+                aria-current="page"
+                href="#"
+                >Ana Sayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-bolder"
+                aria-current="page"
+                href="#"
+                >Menü</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-bolder"
+                aria-current="page"
+                href="#"
+                >Sipariş</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-bolder"
+                aria-current="page"
+                href="#"
+                >Yorumlar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-bolder"
+                aria-current="page"
+                href="#"
+                >İletişim</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-danger text-white rounded-5 btn-danger"
+              type="submit"
+            >
+              Ara
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--home section-->
+    <section
+      class="home mt-5 w-100 h-100 d-flex justify-content-center align-items-center position-relative flex-wrap"
+      id="home"
+    >
+      <div class="home-content">
+        <h3 class="fs-1 fw-bolder">
+          Lezzetin Keyfe Dönüştüğü Anlar <br />
+          <span class="text-danger">Nefis</span>
+          <span class="text-danger">Yemekler</span>
+        </h3>
+        <p>
+          Yenilikçi, yerelliğe ve sürdürülebilirliğe önem veren, iyi fiyat, iyi
+          yemek ve lezzet standardizasyonunu öncelik olarak gören yapımız ile
+          yatırımlarımıza ara vermeden devam ediyoruz.
+        </p>
+        <a
+          href="#"
+          class="btn btn-danger rounded-2 px-2 text-decoration-none"
+          id="home-btn"
+          >Menülerimiz</a
+        >
+      </div>
+      <div class="img">
+        <img src="/images/image 46.png" alt="" class="img-fluid" />
+      </div>
+    </section>
+
+    <!--top-section-->
+    <div class="top-section">
+      <h5 class="text-center text-danger fw-bold">NE HİZMETİ VERİYORUZ</h5>
+      <h3 class="text-center fw-bolder">
+        Favori Yemekler ve Teslimat Ortaklığı
+      </h3>
+
+      <div class="row mt-5">
+        <div
+          class="col-md-4 py-md-0 d-flex justify-content-center align-items-center"
+        >
+          <div class="card border-0 align-items-center">
+            <img src="/images/img1.png" class="w-50" alt="..." />
+            <div class="card-body text-center">
+              <h1 class="fs-3 fw-bold">Kolay Sipariş</h1>
+              <p>Yemek siparişi vermek için birkaç adım yeterli</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 py-md-0 d-flex justify-content-center align-items-center"
+        >
+          <div class="card border-0 align-items-center">
+            <img src="/images/img2.png" class="w-50" alt="..." />
+            <div class="card-body text-center">
+              <h1 class="fs-3 fw-bold">Hızlı Teslimat</h1>
+              <p>Gecikmeden en hızlı şekilde sipariş ulaştırma</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 py-md-0 d-flex justify-content-center align-items-center"
+        >
+          <div class="card border-0 align-items-center">
+            <img src="/images/img3.png" class="w-50" alt="..." />
+            <div class="card-body text-center">
+              <h1 class="fs-3 fw-bold">En iyi Kalite</h1>
+              <p>Kaliteli lezzet standardizasyonu ön planda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--menu section-->
+    <section class="menu" id="menu">
+      <h3 class="text-danger text-center">Menü</h3>
+      <h2 class="fw-bolder text-center">
+        Lezzetli Yemekler Burada
+        <i class="bi bi-arrow-down text-danger fw-bolder"></i>
+      </h2>
+      <div class="row mt-5">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/Mangalorean_Chicken.png" />
+            <div class="card-body">
+              <h3 class="text-danger">M Chicken</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/fasr food.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Fried Rice as</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/Grilled_beef_steak.png" />
+            <div class="card-body">
+              <h3 class="text-danger">G Beef Steak</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/crispy_fried.png" />
+            <div class="card-body">
+              <h3 class="text-danger fs-3">Fried Rice as</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/Mangalorean_Chicken.png" />
+            <div class="card-body">
+              <h3 class="text-danger">M Chicken</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/fasr food.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Fried Rice as</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/Grilled_beef_steak.png" />
+            <div class="card-body">
+              <h3 class="text-danger">G Beef Steak</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/crispy_fried.png" />
+            <div class="card-body">
+              <h3 class="text-danger fs-3">Fried Rice as</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--line-->
+    <div class="container">
+      <div
+        class="line w-100"
+        style="height: 3px; background-color: #dc3545"
+      ></div>
+    </div>
+
+    <!--our menu-->
+    <section class="menu" id="menu">
+      <h3>Menümüz</h3>
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/rice.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Rice Dishe</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/pizza.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Pizza</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/fasr food.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Fast Food</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card h-100">
+            <img src="./images/burger.png" />
+            <div class="card-body">
+              <h3 class="text-danger">Pizza</h3>
+              <h6>Lorem ipsum dolor sit amet.</h6>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="fw-bolder">
+                $20 <i class="bi bi-credit-card text-danger float-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--order-->
+    <section class="order" id="order">
+      <h3 class="text-center fw-bold pb-4">
+        <span class="text-danger">Yemeğinizi</span> Sipariş Edin
+      </h3>
+      <div class="row">
+        <div class="col-lg-5 py-3">
+          <div class="img border border-1">
+            <img src="/images/img1.png" class="w-75" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-7 py-3">
+          <form>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Number"
+              />
+            </div>
+            <textarea
+              rows="5"
+              class="form-control"
+              id="comment"
+              placeholder="Address"
+            ></textarea>
+            <button type="submit" class="btn btn-danger mt-3">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--review section-->
+    <section class="review" id="review">
+      <div class="row">
+        <div class="col-md-4 card border border-danger">
+          <img class="" src="/images/review-img.png" alt="" />
+        </div>
+        <div class="col-md-8 mt-md-0 px-5 mt-5">
+          <h3 class="text-danger">Müşterilerimiz Ne Diyor</h3>
+          <p class="fw-bold">Uygun Fiyat, Kaliteli Sunum, Lezzetli</p>
+          <h6>
+            <img
+              src="/images/pic-1.png"
+              width="50px"
+              class="rounded-1"
+              alt=""
+            />
+            <span class="ms-2">Ahmet Tufan - </span>
+            <div class="d-inline ms-2 text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </h6>
+          <h6>
+            <img
+              src="/images/pic-2.png"
+              width="50px"
+              class="rounded-1"
+              alt=""
+            />
+            <span class="ms-2">Ayşe Sevim - </span>
+            <div class="d-inline ms-3 text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </h6>
+        </div>
+      </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+      <h2 class="text-center fw-bold">
+        Bize <span class="text-danger">Ulaşın</span>
+      </h2>
+      <div class="row">
+        <div class="col-lg-5 mt-3 p-3 bg-danger text-white rounded-3 pb-5">
+          <h2 class="mt-2">Bizimle İletişime Geçin</h2>
+          <p>İletişim bilgilerimiz aşağıdadır.</p>
+          <i class="bi bi-telephone-fill"></i>
+          <span class="m-2">444 444 4444</span><br />
+          <i class="bi bi-envelope"></i> <span class="m-2">info@mail.com</span
+          ><br />
+          <i class="bi bi-geo-alt-fill"></i> <span class="m-2">Turkey</span
+          ><br />
+        </div>
+        <div class="col-lg-7">
+          <form class="mt-3">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Number"
+              />
+            </div>
+            <textarea
+              rows="5"
+              class="form-control"
+              id="comment"
+              placeholder="Address"
+            ></textarea>
+            <button type="submit" class="btn btn-danger mt-3">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footer">
+      <div class="f-content text-center">
+        <div class="logo">
+          <img src="/images/logo.png" class="w-25" alt="" />
+        </div>
+        <p>
+          2002 yılından bu yana yeme-içme sektöründe yarattığımız
+          markalarımızla, öncü duruşumuza ve liderliğimize devam ediyoruz.
+        </p>
+        <i class="bi bi-facebook fs-4 p-2 rounded-3"></i>
+        <i class="bi bi-twitter fs-4 p-2 rounded-3"></i>
+        <i class="bi bi-instagram fs-4 p-2 rounded-3"></i>
+        <i class="bi bi-youtube fs-4 p-2 rounded-3"></i>
+        <div class="content mt-3">
+          &copy;2023 Restaurant Group. Bütün Hakları Saklıdır.
+          <a href="" class="text-danger">Restaurant Group</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
